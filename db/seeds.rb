@@ -10,6 +10,7 @@ Page.delete_all
 
 Page.create([
   { title: "Page 1", body: "Content of page 1", old: false },
+  { title: "Page 1", body: "Old content of page 1", old: true },
   { title: "Page 2", body: "Content of page 2", old: false },
   { title: "Page 3", body: "Content of page 3", old: false }
 ])
