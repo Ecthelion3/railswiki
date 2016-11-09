@@ -1,0 +1,7 @@
+<%= form_for @page, url: pages_path do |f| %>
+  <div><%= f.text_field :title, placeholder: "Title..." %></div>
+
+  <div><%= f.text_area :body, placeholder: "Body...", size: "40x15" %></div>
+
+  <div><%= f.submit %><%= button_to 'Cancel', root_path %></div>
+<% end %>
