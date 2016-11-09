@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @pages = Page.all
+    @pages = Page.where(old: false)
   end
 
   def show
