@@ -6,4 +6,9 @@ class PagesController < ApplicationController
   def show
     @page = Page.find_by_id(params[:id])
   end
+
+  def history
+    @page = Page.find_by_id(params[:id])
+    @pages = Page.where(title: @page.title)
+  end
 end

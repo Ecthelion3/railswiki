@@ -1,0 +1,6 @@
+<table>
+<% @pages.each do |page| %>
+<tr><td><%= page.title %></td><td><%= page.created_at %></td></tr>
+<% end %>
+</table>
+<p><%= link_to "Back", @page %></p>
